@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_showArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#999999">
+
+        <TextView
+            android:id="@+id/essid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTC M8"
+            android:textColor="#162834"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_hideArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#999999">
+
+        <TextView
+            android:id="@+id/fbssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bssid"
+            android:text="bssid："
+            android:textColor="#162834"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fbssid"
+            android:text="ff:ff:ff:ff:ff:ff"
+            android:textColor="#F09BED"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/flevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fbssid"
+            android:layout_marginTop="10dp"
+            android:text="level: "
+            android:textColor="#162834"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/flevel"
+            android:layout_below="@id/bssid"
+            android:layout_toRightOf="@id/flevel"
+            android:gravity="bottom"
+            android:text="888"
+            android:textColor="#F09BED"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fchannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flevel"
+            android:layout_marginTop="10dp"
+            android:text="channel: "
+            android:textColor="#162834"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fchannel"
+            android:layout_below="@id/level"
+            android:layout_toRightOf="@id/fchannel"
+            android:text="0"
+            android:gravity="bottom"
+            android:textColor="#F09BED"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/fcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fchannel"
+            android:layout_marginTop="16dp"
+            android:text="cap: "
+            android:textColor="#162834"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/cap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fcap"
+            android:layout_below="@id/channel"
+            android:layout_toRightOf="@id/fcap"
+            android:text="none"
+            android:gravity="bottom"
+            android:textColor="#F09BED"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/fdistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fcap"
+            android:layout_marginTop="10dp"
+            android:text="distance: "
+            android:textColor="#162834"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fdistance"
+            android:layout_below="@id/cap"
+            android:layout_toRightOf="@id/fdistance"
+            android:text="0.0"
+            android:gravity="bottom"
+            android:textColor="#F09BED"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/fisShared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fdistance"
+            android:layout_marginTop="10dp"
+            android:text="isShared: "
+            android:textColor="#162834"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/isShared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fisShared"
+            android:layout_below="@id/distance"
+            android:layout_toRightOf="@id/fisShared"
+            android:text=""
+            android:gravity="bottom"
+            android:textColor="#F09BED"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
